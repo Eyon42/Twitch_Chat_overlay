@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+.chat-message {
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 3px #888888;
+}
+
+.chat-message p {
+    margin: 0px;
+    color: #131516;
+}
+
+.chat-author {
+    font-weight: bolder;
+}
+
+.chat-author-broadcaster {
+    color: #D64937;
+}
+
+.chat-author-moderator {
+    color: #4F4F54;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        .demo {
+            font-family: sans-serif;
+            border: 1px solid #eee;
+            border-radius: 2px;
+            padding: 20px 30px;
+            margin-top: 1em;
+            margin-bottom: 40px;
+            user-select: none;
+            overflow-x: auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="hello-vue" class="demo">
+        <span title="title">
+        <h1>{{ message }}</h1>
+        <p>{{ counter }}</p>
+        </span>
+        {{meta}}
+        <button v-bind:disabled="dis" v-on:click="addGeb">Button</button>
+      </div>
+
+    <script>
+        const HelloVueApp = {
+            data() {
+                return {
+                message: 'Hello View!!',
+                counter: 0,
+                meta: "geb",
+                dis: false
+                }
+            },
+            mounted() {
+                setInterval(() => {
+                this.counter++
+                }, 1000)
+            },
+            methods: {
+                addGeb() {
+                    this.meta = this.meta + "geb"
+                }   
+            }
+        }
+
+        Vue.createApp(HelloVueApp).mount('#hello-vue')
+    </script>
+</body>
+</html>
