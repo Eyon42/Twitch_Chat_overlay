@@ -13,3 +13,7 @@ const app = Vue.createApp({
         }
 }
 ```
+# To-Do:
+- Add sample image
+- Pack all into a single file release
+- Emoji support(It's not hard, it's knowing the emoji keywords and replacing them with the corresponding image)
